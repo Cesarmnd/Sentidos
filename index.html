@@ -11,17 +11,124 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <!-- Mis Estilos -->
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/4ccbf493a5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="navbar__logo" src="./assets/IMAGENES E ICONOS/Untitled.png"
+            alt="logo" title="logo"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar__element">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="navbar__element">
+              <a class="nav-link" href="#">Clases</a>
+            </li>
+            <li class="navbar__element">
+              <a class="nav-link" href="#">Tienda online</a>
+            </li>
+            <li class="navbar__element">
+              <a class="nav-link" href="#">Sobre mí</a>
+            </li>
+            <li class="navbar__element">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
-
+    <div class="main__clases-container">
+      <img class="main__img main__img-clases" src="./assets/IMAGENES E ICONOS/inicio-clases.jpg" alt="clases"
+        title="clases">
+      <p class="main__container-text">Clases y workshops</p>
+    </div>
+    <div class="main__clases-container">
+      <img class="main__img main__img-clases" src="./assets/IMAGENES E ICONOS/inicio-insumos.jpg" alt="cursos"
+        title="cursos">
+      <p class="main__container-text">Insumos y kits</p>
+    </div>
+    <div class="main__clases-container">
+      <img class="main__img main__img-clases" src="./assets/IMAGENES E ICONOS/inicio-cursos.jpg" alt="insumos"
+        title="insumos">
+      <p class="main__container-text">Cursos online</p>
+    </div>
+    <hr class="main__line">
+    <section class="habilidades">
+      <h1 class="habilidades__titulo">¿QUE ENSENAMOS?</h1>
+      <div class="habilidades__contenedor">
+        <div class="habilidades__contenedor-habilidad">
+          <img class="habilidades__img" src="./assets/IMAGENES E ICONOS/bordado.png" alt="">
+          <h2 class="habilidades__subtitulo">BORDADO</h2>
+          <p class="habilidades__texto">En los diferentes cursos y talleres aprenderemos esta hermosa técnica, sus
+            distintos estilos y las difentes
+            formas de aplicarla a los objetos de uso diario!</p>
+        </div>
+        <div class="habilidades__contenedor-habilidad">
+          <img class="habilidades__img" src="./assets/IMAGENES E ICONOS/telar.png" alt="">
+          <h2 class="habilidades__subtitulo">TELAR</h2>
+          <p class="habilidades__texto">Aprenderemosde forma sencilla a realizar una de las técnicas artesanales més
+            antiguas de la humanidad,
+            creando objetos de decoraón y de uso habitual!</p>
+        </div>
+        <div class="habilidades__contenedor-habilidad">
+          <img class="habilidades__img" src="./assets/IMAGENES E ICONOS/invitados.png" alt="">
+          <h2 class="habilidades__subtitulo">INVITADOS</h2>
+          <p class="habilidades__texto">Cómo creemos en que crear entre más es mejor, armamos talleres con distintos
+            profesionales para ofrecer
+            distintas técnicas artísticas!</p>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
+  <footer class="footer">
+    <section class="localizacion">
+      <h3 class="footer__titulo">ENCONTRANOS</h3>
+      <div class="localizacion__mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.38332516023!2d-58.4747531!3d-34.5827673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdeb6d8d24ea4db7d!2sS%20E%20N%20T%20I%20D%20O%20S%20-%20Estudio%20creativo!5e0!3m2!1ses-419!2spe!4v1656139364094!5m2!1ses-419!2spe"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="localizacion__text">Torrent 1315 Local, 1431 CABA, Argentina</p>
+      </div>
+    </section>
+    <section class="redes">
+      <h3 class="footer__titulo">REDES SOCIALES</h3>
+      <div class="redes__iconos-contenedor">
+        <a class="redes__iconos" href="#">
+          <i class="fa-brands fa-instagram fa-3x"></i>
+        </a>
+        <a class="redes__iconos" href="#">
+          <i class="fa-brands fa-facebook-f fa-3x"></i>
+        </a>
+        <a class="redes__iconos" href="#">
+          <i class="fa-brands fa-youtube fa-3x"></i>
+        </a>
+        <a class="redes__iconos" href="#">
+          <i class="fa-brands fa-whatsapp fa-3x"></i>
+        </a>
+      </div>
+    </section>
 
+    <section class="suscripcion">
+      <h3 class="footer__titulo">SUSCRIBITE</h3>
+      <p class="suscripcion__texto">Ingresá tu mail y recibí las novedades</p>
+      <form action="">
+        <input class="suscripcion__entrada" type="email" name="email" id="email" placeholder="Ingrese su email..."
+          required>
+        <input class="suscripcion__enviar" type="submit">
+      </form>
+    </section>
   </footer>
 
   <!-- Scripts de Bootstrap -->
