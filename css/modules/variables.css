@@ -1,0 +1,19 @@
+@import url(./fonts.css);
+
+/*  Variables */
+:root {
+  /* Colores */
+  --color-blanco: #fff;
+  --color-negro: #000;
+  --color-coral: #e8a39b;
+  --color-coral-transparente: #e8a39b98;
+  --color-verde: #aeccaa;
+  --color-rosado: #ebbb9a;
+  --color-gris: #ede9d3;
+
+  /* Fuentes */
+  --fuente-titulares: 'Queensila';
+  --fuente-parrafo-light: 'Cocogoose Light';
+  --fuente-parrafo-demibold: 'Cocogoose DemiBold';
+  --fuente-resaltado: 'Cocogoose Regular'
+}

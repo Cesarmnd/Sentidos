@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Queensila";
+  src: url("../../fonts/Queensila/Queensila.eot") format("eot"),
+        url("../../fonts/Queensila/Queensila.woff2") format("woff2"),
+        url("../../fonts/Queensila/Queensila.woff") format("woff"),
+        url("../../fonts/Queensila/queensila.ttf") format("truetype"),
+        url("../../fonts/Queensila/Queensila.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Cocogoose Light";
+  src: url("../../fonts/CocogooseLight/Cocogoose-Light.eot") format("eot"),
+        url("../../fonts/CocogooseLight/Cocogoose-Light.woff2") format("woff2"),
+        url("../../fonts/CocogooseLight/Cocogoose-Light.woff") format("woff"),
+        url("../../fonts/CocogooseLight/cocogooseLight.ttf") format("truetype"),
+        url("../../fonts/CocogooseLight/Cocogoose-Light.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Cocogoose DemiBold";
+  src: url("../../fonts/CocogooseDemiBold/COCOGOOSE-DemiBold.eot") format("eot"),
+        url("../../fonts/CocogooseDemiBold/COCOGOOSE-DemiBold.woff2") format("woff2"),
+        url("../../fonts/CocogooseDemiBold/COCOGOOSE-DemiBold.woff") format("woff"),
+        url("../../fonts/CocogooseDemiBold/cocogooseDemibold.ttf") format("truetype"),
+        url("../../fonts/CocogooseDemiBold/COCOGOOSE-DemiBold.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Cocogoose Regular";
+  src: url("../../fonts/CocogooseRegular/CocogoosePro.eot") format("eot"),
+        url("../../fonts/CocogooseRegular/CocogoosePro.woff2") format("woff2"),
+        url("../../fonts/CocogooseRegular/CocogoosePro.woff") format("woff"),
+        url("../../fonts/CocogooseRegular/CocogoosePro.ttf") format("truetype"),
+        url("../../fonts/CocogooseRegular/CocogoosePro.svg") format("svg");
+}
