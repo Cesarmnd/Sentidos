@@ -38,7 +38,7 @@
   margin-bottom: 20px;
 }
 
-.main__container-text {
+.main__container-texto {
   position: absolute;
   background-color: var(--color-coral-transparente) ;
   width: 100%;
@@ -66,12 +66,12 @@
   margin-bottom: 40px;
 }
 
-.main__clases-container:hover > p {
+.main__container:hover > p {
   background-color: var(--color-coral);
-  font-size: 55px;
+  font-size: 35px;
 }
 
-.main__clases-container:hover > img {
+.main__container:hover > img {
   transform: scale(1.2);
   filter: brightness(50%);
 }
