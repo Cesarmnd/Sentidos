@@ -198,6 +198,88 @@
   background-color: var(--color-verde);
 }
 
+/* Sección Clases */
+.clases {
+  font-family: var(--fuente-titulares);
+  display: flex;
+  flex-direction: column;
+}
+
+.clases__titulo {
+  color: var(--color-coral);
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+.clases__contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.clases__img {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.clases__texto {
+  width: 80%;
+  max-width: 425px;
+  font-family: var(--fuente-parrafo-light);
+  font-size: 14px;
+  margin: 30px auto;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 7px 35px;
+  margin: 30px auto;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: var(--fuente-resaltado);
+  background-color: var(--color-coral);
+  color: var(--color-blanco);
+}
+
+.btn:hover {
+  background-color: var(--color-coral-oscuro);
+  color: var(--color-blanco);
+}
+
+@media screen and (min-width: 768px ) {
+  .clases {
+    margin: 0 auto;
+    max-width: 708px;
+  }
+
+  .clases__contenedor {
+    flex-direction: row;
+    margin: 35px 0;
+  }
+
+  .clases__img {
+    width: 250px;
+  }
+
+  .clases__texto {
+    margin: 0 20px;
+  }
+
+  .clases__contenedor-dos {
+    flex-direction: row-reverse;
+  }
+
+  .clases__btn {
+    margin-top: 30px;
+  }
+
+  .redes__iconos-contenedor {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .navbar__logo {
     width: 200px;
@@ -299,10 +381,23 @@
     width: 400px;
   }
 
-  .clases__contenedor {
-    /* width: 80%; */
+  .clases {
+    max-width: 1085px;
+    width: 80%;
   }
 
+  .clases__contenedor {
+    max-width: none;
+  }
+
+  .clases__img {
+    width: 40%;
+    max-width: 394px;
+  }
+
+  .clases__texto {
+    max-width: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -312,6 +407,11 @@
 
   .navbar__elemento:last-child {
     padding-right: 150px;
+  }
+
+  .clases__texto {
+    padding-left: 40px;
+    max-width: none;
   }
 }
 
@@ -328,89 +428,12 @@
   .footer {
     padding: 0 250px;
   }
+  
 }
 
-/* Sección Clases */
-.clases {
-  font-family: var(--fuente-titulares);
-  display: flex;
-  flex-direction: column;
-}
 
-.clases__titulo {
-  color: var(--color-coral);
-  font-size: 30px;
-  text-align: center;
-  margin: 20px;
-}
 
-.clases__contenedor {
-  display: flex;
-  flex-direction: column;
-}
 
-.clases__img {
-  width: 340px;
-  margin: 0 auto;
-}
-
-.clases__texto {
-  width: 80%;
-  max-width: 425px;
-  font-family: var(--fuente-parrafo-light);
-  font-size: 14px;
-  margin: 30px auto;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 7px 35px;
-  margin: 30px auto;
-  border-radius: 20px;
-  font-size: 15px;
-  font-family: var(--fuente-resaltado);
-  background-color: var(--color-coral);
-  color: var(--color-blanco);
-}
-
-.btn:hover {
-  background-color: var(--color-coral-oscuro);
-  color: var(--color-blanco);
-}
-
-@media screen and (min-width: 768px ) {
-  .clases {
-    margin: 0 auto;
-    max-width: 708px;
-  }
-
-  .clases__contenedor {
-    flex-direction: row;
-    margin: 35px 0;
-  }
-
-  .clases__img {
-    width: 250px;
-  }
-
-  .clases__texto {
-    margin: 0 20px;
-  }
-
-  .clases__contenedor-dos {
-    flex-direction: row-reverse;
-  }
-
-  .clases__btn {
-    margin-top: 30px;
-  }
-
-  .redes__iconos-contenedor {
-    width: 50%;
-    margin: 0 auto;
-  }
-}
 
 
 
