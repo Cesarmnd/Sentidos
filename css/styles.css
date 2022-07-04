@@ -431,6 +431,32 @@
   
 }
 
+.sobre {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sobre__titulo {
+  font-family: var(--fuente-titulares);
+  text-transform: uppercase;
+  color: var(--color-coral);
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 20px;
+}
+
+.sobre__contenedor{
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+.sobre__texto{
+  width: 80%;
+  font-family: var(--fuente-parrafo-light);
+  font-size: 16px;
+}
 
 
 
