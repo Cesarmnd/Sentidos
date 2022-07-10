@@ -65,8 +65,8 @@
     </header>
     <main class="contacto">
       <section>
-        <h2>¡Hola! Encontranos en</h2>
-        <p>
+        <h2 class="contacto__titulo">¡Hola! Encontranos en</h2>
+        <p class="contacto__direccion">
           Torrent 1315, CABA.<br />
           A dos cuadras de la estación “Los Incas” del subte B
         </p>
@@ -79,7 +79,7 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <p>
+        <p class="contacto__pie">
           Los medios de transporte cercano son: Estacion “Los incas - Parque
           chas” Subte B (dos cuadras)<br />
           Líneas de colectivo: 71, 80, 87, 90, 93, 108, 111, 113, 123, 127, 133,
@@ -87,35 +87,37 @@
         </p>
         <hr class="main__line" />
       </section>
-      <section>
-        <p>
+      <section class="contacto__form">
+        <p class="contacto__titulo-form">
           En qué podemos ayudarte? Dejanos tu mensaje y en breve te
           responderemos
         </p>
 
         <form action="">
-          <div class="mb-3">
-            <label for="name" class="form-label"></label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Nombre completo"
-              required
-            />
-          </div>
+          <div class="contacto__inputs">
+            <div class="contacto__input">
+              <label for="name" class="form-label"></label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Nombre completo"
+                required
+              />
+            </div>
 
-          <div class="mb-3">
-            <label for="email" class="form-label"></label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Correo electrónico"
-              required
-            />
+            <div class="contacto__input">
+              <label for="email" class="form-label"></label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Correo electrónico"
+                required
+              />
+            </div>
           </div>
-          <div class="mb-3">
+          <div class="contacto__input">
             <label for="phone" class="form-label"></label>
             <input
               type="tel"
@@ -125,7 +127,7 @@
               required
             />
           </div>
-          <div class="mb-3">
+          <div class="contacto__input">
             <label for="message" class="form-label"></label>
             <textarea
               class="form-control"
