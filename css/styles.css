@@ -264,6 +264,11 @@
   color: var(--color-blanco);
 }
 
+.contacto__mapa {
+  width: 80%;
+  height: 350px;
+  }
+
 @media screen and (min-width: 768px ) {
   .clases {
     margin: 0 auto;
@@ -294,6 +299,11 @@
   .redes__iconos-contenedor {
     width: 50%;
     margin: 0 auto;
+  }
+
+  .contacto__mapa {
+    width: 600px;
+    height: 350px;
   }
 }
 
@@ -421,6 +431,10 @@
     max-width: none;
   }
 
+  .contacto__mapa {
+    width: 800px;
+    height: 400px;
+  }
 
 }
 
@@ -575,4 +589,5 @@
   text-align: center;
   font-family: var(--fuente-parrafo-demibold);
 }
+
 
