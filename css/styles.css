@@ -36,6 +36,7 @@
   align-items: center;
   overflow: hidden;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .main__container-texto {
@@ -45,8 +46,8 @@
   text-align: center;
   color: var(--color-blanco);
   font-family: var(--fuente-resaltado);
-  font-size: 30px;
-  padding: 25px;
+  font-size: 25px;
+  padding: 15px;
   transition: background-color 1s, font-size 1s;
 }
 
@@ -68,7 +69,7 @@
 
 .main__container:hover > p {
   background-color: var(--color-coral);
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .main__container:hover > img {
@@ -94,15 +95,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .habilidades__contenedor-habilidad {
-  width: 100%;
-  margin: 35px 0;
+  width: 236px;
+  margin-bottom: 35px;
 }
 
 .habilidades__subtitulo {
   font-family: var(--fuente-resaltado);
+  margin: 3px;
+}
+
+.habilidades__linea {
+  width: 35%;
+  height: 2px;
+  margin: 0 auto 25px auto;
+  border: none;
+  background-color: black;
 }
 
 .habilidades__texto {
@@ -111,9 +122,15 @@
   margin: 0 auto;
 }
 
+.habilidades__img-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
 .habilidades__img {
   width: 150px;
-  margin: 20px 0;
 }
 
 .footer {
@@ -340,6 +357,10 @@
 
   .habilidades__contenedor {
     flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1140px;
+    margin: 0 auto;
   }
 
   .footer {
@@ -374,6 +395,7 @@
 
   .redes__iconos-contenedor {
     justify-content: space-between;
+    width: 100%;
   }
 
   .suscripcion {
@@ -510,10 +532,22 @@
 
 .contacto{
   text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.contacto__franja {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background-color: var(--color-coral);
+  z-index: -1;
 }
 
 .contacto__titulo{
-  font-family: var(--fuente-titulares);
+  font-family: var(--fuente-titulares);  
+  color: var(--color-blanco);
   text-transform: uppercase;
   font-size: 35px;
   letter-spacing: 0.04em;
