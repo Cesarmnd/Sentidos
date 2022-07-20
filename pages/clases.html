@@ -180,7 +180,7 @@
           <button class="suscripcion__enviar" type="submit">Enviar</button>
         </form>
 
-        <div class="modal" tabindex="-1" id="myModalFooter">
+        <div class="modal fade" tabindex="-1" id="myModalFooter">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-body">
@@ -189,13 +189,20 @@
                   Gracias por suscribirte a partir de hoy recibirás todas las
                   novedades de Sentidos
                 </p>
-                <button class="clases__btn btn btnModal">Cerrar</button>
+                <button
+                  type="button"
+                  class="clases__btn btn btnModal"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
     </footer>
+
     <!-- Scripts de Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

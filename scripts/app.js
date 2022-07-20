@@ -39,3 +39,4 @@ async function handleSubmitFooter(event){
     console.log("enviado")
   }
 }
+
