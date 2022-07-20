@@ -199,11 +199,12 @@
 }
 
 .suscripcion__entrada {
+
   outline: none;
   border: none;
   border-radius: 10px;
-  font-size: 18px;
-  padding: 2px;
+  font-size: 15px;
+  padding: 6px;
 }
 
 .suscripcion__enviar {
@@ -320,7 +321,6 @@
   /*.navbar__logo {
     width: 200px;
   }*/
-
   .navbar-nav {
     position: absolute;
     right: 0;
@@ -462,6 +462,9 @@
     max-width: none;
   }
 
+ 
+  
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -477,6 +480,7 @@
   .footer {
     padding: 0 250px;
   }
+
   
 }
 
@@ -579,7 +583,7 @@
   font-weight: 700;
 }
 .contacto__form{
-  margin: 50px;
+  margin: 2rem;
 }
 
 .form-control{
@@ -600,4 +604,25 @@
   font-family: var(--fuente-parrafo-demibold);
 }
 
+.modal-body{
+  margin: 1rem;
+text-align: center;
+}
 
+.modal-title{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--fuente-resaltado);
+  color: var(--color-coral);
+}
+
+.modal-Texto{
+  text-align: center;
+  font-family: var(--fuente-parrafo-lightd);
+  font-weight: 500;
+  margin: 2rem;
+}
+
+.btnModal{
+  margin: 2px;
+}

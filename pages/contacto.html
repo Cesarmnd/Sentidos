@@ -93,7 +93,7 @@
           responderemos
         </p>
 
-        <form method="POST" action="https://formspree.io/f/xnqwedjb">
+        <form id="form" method="POST" action="https://formspree.io/f/mbjwnodk">
           <div class="contacto__inputs">
             <div class="contacto__input">
               <label for="name" class="form-label"></label>
@@ -102,7 +102,7 @@
                 class="form-control"
                 id="name"
                 name="name"
-                placeholder="Nombre completo"
+                placeholder="Nombre"
                 required
               />
             </div>
@@ -114,7 +114,7 @@
                 class="form-control"
                 id="email"
                 name="email"
-                placeholder="Correo electrónico"
+                placeholder="Email"
                 required
               />
             </div>
@@ -140,8 +140,29 @@
               placeholder="Mensaje"
             ></textarea>
           </div>
-          <button class="clases__btn btn">Enviar</button>
+          <button
+            class="clases__btn btn g-recaptcha"
+            data-sitekey="reCAPTCHA_site_key"
+            data-callback="onSubmit"
+            data-action="submit"
+          >
+            Enviar
+          </button>
         </form>
+
+        <div class="modal" tabindex="-1" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h5 class="modal-title">¡Mensaje enviado!</h5>
+                <p class="modal-Texto">
+                  En breve nos contactaremos para atender tu solicitud
+                </p>
+                <button class="clases__btn btn btnModal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -191,7 +212,11 @@
       <section class="suscripcion">
         <h3 class="footer__titulo">SUSCRIBITE</h3>
         <p class="suscripcion__texto">Ingresá tu mail y recibí las novedades</p>
-        <form action="">
+        <form
+          id="formFooter"
+          method="POST"
+          action="https://formspree.io/f/xvoleaak"
+        >
           <input
             class="suscripcion__entrada"
             type="email"
@@ -200,8 +225,23 @@
             placeholder="Ingrese su email..."
             required
           />
-          <input class="suscripcion__enviar" type="submit" />
+          <button class="suscripcion__enviar" type="submit">Enviar</button>
         </form>
+
+        <div class="modal" tabindex="-1" id="myModalFooter">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h5 class="modal-title">¡Te suscribiste con éxito!</h5>
+                <p class="modal-Texto">
+                  Gracias por suscribirte a partir de hoy recibirás todas las
+                  novedades de Sentidos
+                </p>
+                <button class="clases__btn btn btnModal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </footer>
 
@@ -218,6 +258,7 @@
     ></script>
 
     <!-- Mis scripts -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="../scripts/app.js"></script>
   </body>
 </html>

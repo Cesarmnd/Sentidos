@@ -115,7 +115,11 @@
       <section class="redes">
         <h3 class="footer__titulo">REDES SOCIALES</h3>
         <div class="redes__iconos-contenedor">
-          <a class="redes__iconos" href="https://www.instagram.com/estudiosentidos/?hl=en" target="_blank">
+          <a
+            class="redes__iconos"
+            href="https://www.instagram.com/estudiosentidos/?hl=en"
+            target="_blank"
+          >
             <i class="fa-brands fa-instagram fa-3x"></i>
           </a>
           <a class="redes__iconos" href="#">
@@ -124,7 +128,11 @@
           <a class="redes__iconos" href="#">
             <i class="fa-brands fa-youtube fa-3x"></i>
           </a>
-          <a class="redes__iconos" href="https://wa.me/541123925341" target="_blank">
+          <a
+            class="redes__iconos"
+            href="https://wa.me/541123925341"
+            target="_blank"
+          >
             <i class="fa-brands fa-whatsapp fa-3x"></i>
           </a>
         </div>
@@ -150,7 +158,11 @@
       <section class="suscripcion">
         <h3 class="footer__titulo">SUSCRIBITE</h3>
         <p class="suscripcion__texto">Ingresá tu mail y recibí las novedades</p>
-        <form action="">
+        <form
+          id="formFooter"
+          method="POST"
+          action="https://formspree.io/f/xnqwedjb"
+        >
           <input
             class="suscripcion__entrada"
             type="email"
@@ -159,11 +171,25 @@
             placeholder="Ingrese su email..."
             required
           />
-          <input class="suscripcion__enviar" type="submit" />
+          <button class="suscripcion__enviar" type="submit">Enviar</button>
         </form>
+
+        <div class="modal" tabindex="-1" id="myModalFooter">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h5 class="modal-title">¡Te suscribiste con éxito!</h5>
+                <p class="modal-Texto">
+                  Gracias por suscribirte a partir de hoy recibirás todas las
+                  novedades de Sentidos
+                </p>
+                <button class="clases__btn btn btnModal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </footer>
-
     <!-- Scripts de Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
