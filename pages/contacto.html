@@ -93,7 +93,11 @@
           responderemos
         </p>
 
-        <form id="form" method="POST" action="https://formspree.io/f/mbjwnodk">
+        <form
+          id="formContact"
+          method="POST"
+          action="https://formspree.io/f/mbjwnodk"
+        >
           <div class="contacto__inputs">
             <div class="contacto__input">
               <label for="name" class="form-label"></label>
@@ -140,17 +144,10 @@
               placeholder="Mensaje"
             ></textarea>
           </div>
-          <button
-            class="clases__btn btn g-recaptcha"
-            data-sitekey="reCAPTCHA_site_key"
-            data-callback="onSubmit"
-            data-action="submit"
-          >
-            Enviar
-          </button>
+          <button class="clases__btn btn" type="submit">Enviar</button>
         </form>
 
-        <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal fade" tabindex="-1" id="modalContact">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-body">
@@ -158,7 +155,13 @@
                 <p class="modal-Texto">
                   En breve nos contactaremos para atender tu solicitud
                 </p>
-                <button class="clases__btn btn btnModal">Cerrar</button>
+                <button
+                  type="button"
+                  class="clases__btn btn btnModal"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
@@ -228,7 +231,7 @@
           <button class="suscripcion__enviar" type="submit">Enviar</button>
         </form>
 
-        <div class="modal" tabindex="-1" id="myModalFooter">
+        <div class="modal fade" tabindex="-1" id="myModalFooter">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-body">
@@ -237,7 +240,13 @@
                   Gracias por suscribirte a partir de hoy recibirás todas las
                   novedades de Sentidos
                 </p>
-                <button class="clases__btn btn btnModal">Cerrar</button>
+                <button
+                  type="button"
+                  class="clases__btn btn btnModal"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
@@ -258,7 +267,6 @@
     ></script>
 
     <!-- Mis scripts -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="../scripts/app.js"></script>
   </body>
 </html>

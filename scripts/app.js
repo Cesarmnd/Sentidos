@@ -1,6 +1,7 @@
 //FORMULARIO
-const myModal = new bootstrap.Modal(document.getElementById('myModal'))
-const $form = document.querySelector("#form")
+
+const myModal = new bootstrap.Modal(document.getElementById('modalContact'))
+const $form = document.querySelector("#formContact")
 $form.addEventListener('submit', handleSubmit)
 async function handleSubmit(event){
   event.preventDefault()
@@ -24,10 +25,10 @@ const $formFooter = document.querySelector("#formFooter")
 $formFooter.addEventListener('submit', handleSubmit)
 async function handleSubmit(event){
   event.preventDefault()
-  const form = new FormData(this)
+  const formFooter = new FormData(this)
   const response = await fetch(this.action, {
     method: this.method,
-    body: form,
+    body: formFooter,
     headers: {
       'Accept': 'application/json'
     }
@@ -37,8 +38,4 @@ async function handleSubmit(event){
     myModalFooter.show()
     console.log("enviado")
   }
-}
-//CAPTCHA
-function onSubmit(token) {
-  document.getElementById("demo-form").submit();
 }
