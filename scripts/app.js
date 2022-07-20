@@ -22,8 +22,8 @@ async function handleSubmit(event){
 //FOOTER
 const myModalFooter = new bootstrap.Modal(document.getElementById('myModalFooter'))
 const $formFooter = document.querySelector("#formFooter")
-$formFooter.addEventListener('submit', handleSubmit)
-async function handleSubmit(event){
+$formFooter.addEventListener('submit', handleSubmitFooter)
+async function handleSubmitFooter(event){
   event.preventDefault()
   const formFooter = new FormData(this)
   const response = await fetch(this.action, {
