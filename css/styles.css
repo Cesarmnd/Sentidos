@@ -559,11 +559,12 @@
 
   .clases__btn {
     margin-top: 30px;
-
   }
 
   .clases__btn a{
-    text-decoration: none;  }
+    text-decoration: none;  
+    color: var(--color-blanco);
+  }
 
   .redes__iconos-contenedor {
     width: 50%;
