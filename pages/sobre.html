@@ -12,6 +12,8 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <!-- Sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <!-- Mis Estilos -->
     <link rel="stylesheet" href="../css/styles.css" />
     <!-- FontAwesome -->
@@ -38,7 +40,7 @@
           </button>
           <img
             class="navbar__logo"
-            src="../assets/images/Untitled.png"
+            src="../assets/images/logo.png"
             alt="logo"
             title="logo"
           />
@@ -48,16 +50,40 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="navbar__elemento">
-                <a class="nav-link" href="clases.html">Clases</a>
+                <a class="nav-link" href="./clases.html">Clases</a>
+              </li>
+              <li class="navbar__elemento" id="contenedor">
+                <a class="nav-link" id="dropdown" href="#">
+                  Tienda online <i class="fa-solid fa-angle-down"></i>
+                </a> 
+                <ul class="drop-list outside" id="droplist">
+                  <li class="drop-list__elemento">
+                    <a class="drop-list__link" href="#">
+                      <i class="drop-list__marcador fa-solid fa-chevron-right"></i> CLASES ONLINE
+                    </a>
+                  </li>
+                  <li class="drop-list__elemento">
+                    <a class="drop-list__link" href="#">
+                      <i class="drop-list__marcador fa-solid fa-chevron-right"></i> CLASES PRESENCIALES
+                    </a>
+                  </li>
+                  <li class="drop-list__elemento">
+                    <a class="drop-list__link" href="#">
+                      <i class="drop-list__marcador fa-solid fa-chevron-right"></i> INSUMOS
+                    </a>
+                  </li>
+                  <li class="drop-list__elemento">
+                    <a class="drop-list__link" href="#">
+                      <i class="drop-list__marcador fa-solid fa-chevron-right"></i> TALLERES ESPECIALES
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="navbar__elemento">
-                <a class="nav-link" href="tienda.html">Tienda online</a>
+                <a class="nav-link" href="./sobre.html">Sobre mí</a>
               </li>
               <li class="navbar__elemento">
-                <a class="nav-link" href="sobre.html">Sobre mí</a>
-              </li>
-              <li class="navbar__elemento">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -66,6 +92,10 @@
     </header>
 
     <main class="sobre">
+      <div 
+        class="filter hidden" 
+        id="filter">
+      </div>
       <h2 class="sobre__titulo">¡Hola mi nombre es flor!</h2>
       <div class="sobre__contenedor">
         <p class="sobre__texto">
@@ -96,18 +126,7 @@
       <section class="redes">
         <h3 class="footer__titulo">REDES SOCIALES</h3>
         <div class="redes__iconos-contenedor">
-          <a class="redes__iconos" href="https://www.instagram.com/estudiosentidos/?hl=en" target="_blank">
-            <i class="fa-brands fa-instagram fa-3x"></i>
-          </a>
-          <a class="redes__iconos" href="#">
-            <i class="fa-brands fa-facebook-f fa-3x"></i>
-          </a>
-          <a class="redes__iconos" href="#">
-            <i class="fa-brands fa-youtube fa-3x"></i>
-          </a>
-          <a class="redes__iconos" href="https://wa.me/541123925341" target="_blank">
-            <i class="fa-brands fa-whatsapp fa-3x"></i>
-          </a>
+
         </div>
       </section>
 
@@ -131,7 +150,11 @@
       <section class="suscripcion">
         <h3 class="footer__titulo">SUSCRIBITE</h3>
         <p class="suscripcion__texto">Ingresá tu mail y recibí las novedades</p>
-        <form action="">
+        <form
+          id="formFooter"
+          method="POST"
+          action="https://formspree.io/f/xvoleaak"
+        >
           <input
             class="suscripcion__entrada"
             type="email"
@@ -140,8 +163,29 @@
             placeholder="Ingrese su email..."
             required
           />
-          <input class="suscripcion__enviar" type="submit" />
+          <button class="suscripcion__enviar" type="submit">Enviar</button>
         </form>
+
+        <div class="modal fade" tabindex="-1" id="myModalFooter">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h5 class="modal-title">¡Te suscribiste con éxito!</h5>
+                <p class="modal-Texto">
+                  Gracias por suscribirte a partir de hoy recibirás todas las
+                  novedades de Sentidos
+                </p>
+                <button
+                  type="button"
+                  class="clases__btn btn btnModal"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </footer>
 
