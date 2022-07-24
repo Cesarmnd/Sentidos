@@ -205,6 +205,7 @@
   background-color: var(--color-coral);
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
 }
 
 .footer__titulo {
@@ -273,25 +274,27 @@
 }
 
 .suscripcion__entrada {
-
+  width: 200px;
   outline: none;
   border: none;
   border-radius: 25px;
   font-size: 18px;
-  padding: 2px;
+  padding: 2px 15px;
 }
 
 .suscripcion__enviar {
+  font-family: var(--fuente-numero);
+  font-size: 15px;
   border: none;
   outline: none;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
   background-color: var(--color-blanco);
 }
 
 .suscripcion__enviar:hover {
-  color: var(--color-blanco);
-  background-color: var(--color-verde);
+  color: var(--color-negro);
+  background-color: var(--color-rosado);
 }
 
 /* Sección Clases */
@@ -331,13 +334,14 @@
 .btn:focus {
   border: none;
   outline: none;
-  padding: 12px 35px;
+  padding: 10px 35px;
   margin: 30px auto 20px auto;
-  border-radius: 20px;
+  border-radius: 30px;
   font-size: 15px;
   font-family: var(--fuente-resaltado);
   background-color: var(--color-coral);
   color: var(--color-blanco);
+  box-shadow: 4px 4px 30px 2px rgba(0, 0, 0, 0.17);
 }
 
 .btn:hover {
@@ -530,6 +534,10 @@
   .drop-list__marcador {
     font-size: 15px;
   }
+
+  .suscripcion__entrada {
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 768px ) {
@@ -577,6 +585,7 @@
 
   .clases__btn {
     margin-top: 30px;
+
   }
 
   .clases__btn a{
