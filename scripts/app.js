@@ -1,30 +1,27 @@
 // Redes sociales
 const redes = [
-  { name: 'youtube',
+  { name: 'Instagram',
     link: 'https://www.instagram.com/estudiosentidos/?hl=en',
     class: 'fa-brands fa-instagram fa-3x'
   },
   
-  { name: 'youtube',
-    link: 'https://www.instagram.com/estudiosentidos/?hl=en',
+  { name: 'Facebook',
+    link: 'https://m.facebook.com/Sentidos-Estudio-111177608015962/',
     class: 'fa-brands fa-facebook-f fa-3x'
   },
 
-  { name: 'youtube',
-    link: 'https://www.instagram.com/estudiosentidos/?hl=en',
+  { name: 'Youtube',
+    link: 'https://www.youtube.com/channel/UCY6DDP1B5nEAFYBr6-7Le2A',
     class: 'fa-brands fa-youtube fa-3x'
   },
 
-  { name: 'youtube',
+  { name: 'WhatsApp',
     link: 'https://wa.me/541123925341',
     class: 'fa-brands fa-whatsapp fa-3x'
   }
 ];
 
 // Contenedores
-const contenedor = document.getElementById('contenedor');
-const dropdownBtn = document.getElementById('dropdown');
-const droplist = document.getElementById('droplist');
 const filter = document.getElementById('filter');
 const redContenedor = document.querySelector('.redes__iconos-contenedor');
 
@@ -65,18 +62,6 @@ redes.forEach( item => {
   red.appendChild(icono);
   redContenedor.appendChild(red);
 })
-
-// Mostrar submenú de tienda
-dropdownBtn.addEventListener('click', () => {
-  droplist.className === 'drop-list outside' 
-  ? (droplist.className = 'drop-list inside', filter.className = 'filter active') 
-  : droplist.className = 'drop-list outside';
-});
-
-// Ocultar submenú de tienda
-document.addEventListener('click', (e) => {
-  !contenedor.contains(e.target) && (droplist.className = 'drop-list outside', filter.className = 'filter hidden');
-});
 
 //FOOTER
 const myModalFooter = new bootstrap.Modal(document.getElementById('myModalFooter'))
