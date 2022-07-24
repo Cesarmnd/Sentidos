@@ -14,8 +14,9 @@
   
 
   /* Fuentes */
-  --fuente-titulares: 'Queensila';
+  --fuente-titulares: 'Teviraj';
   --fuente-parrafo-light: 'Cocogoose Light';
   --fuente-parrafo-demibold: 'Cocogoose DemiBold';
-  --fuente-resaltado: 'Cocogoose Regular'
+  --fuente-resaltado: 'Cocogoose Regular';
+  --fuente-numero: 'Montserrat Medium';
 }
