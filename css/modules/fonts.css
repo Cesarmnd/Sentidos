@@ -71,3 +71,21 @@
         url("../../fonts/MontserratSemiBold/Montserrat-SemiBold.ttf") format("truetype"),
         url("../../fonts/MontserratSemiBold/Montserrat-SemiBold.svg") format("svg");
 }
+
+@font-face {
+  font-family: "Nir";
+  src: url("../../fonts/neviat/Nirotica-Regular.eot") format("eot"),
+        url("../../fonts/neviat/Nirotica-Regular.woff2") format("woff2"),
+        url("../../fonts/neviat/Nirotica-Regular.woff") format("woff"),
+        url("../../fonts/neviat/Nirotica.ttf") format("truetype"),
+        url("../../fonts/neviat/Nirotica-Regular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Nirotica";
+  src: url("../../fonts/NiroticaRegular/Nirotica-Regular.eot") format("eot"),
+        url("../../fonts/NiroticaRegular/Nirotica-Regular.woff2") format("woff2"),
+        url("../../fonts/NiroticaRegular/Nirotica-Regular.woff") format("woff"),
+        url("../../fonts/NiroticaRegular/Nirotica-Regula.ttf") format("truetype"),
+        url("../../fonts/NiroticaRegular/Nirotica-Regular.svg") format("svg");
+}
