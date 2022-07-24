@@ -1,13 +1,4 @@
 @font-face {
-  font-family: "Queensila";
-  src: url("../../fonts/Queensila/Queensila.eot") format("eot"),
-        url("../../fonts/Queensila/Queensila.woff2") format("woff2"),
-        url("../../fonts/Queensila/Queensila.woff") format("woff"),
-        url("../../fonts/Queensila/queensila.ttf") format("truetype"),
-        url("../../fonts/Queensila/Queensila.svg") format("svg");
-}
-
-@font-face {
   font-family: "Cocogoose Light";
   src: url("../../fonts/CocogooseLight/Cocogoose-Light.eot") format("eot"),
         url("../../fonts/CocogooseLight/Cocogoose-Light.woff2") format("woff2"),
@@ -37,48 +28,12 @@
 /* Alternativas */
 
 @font-face {
-  font-family: "Teviraj";
-  src: url("../../fonts/Teviraj/Taviraj-Thin.eot") format("eot"),
-        url("../../fonts/Teviraj/Taviraj-Thin.woff2") format("woff2"),
-        url("../../fonts/Teviraj/Taviraj-Thin.woff") format("woff"),
-        url("../../fonts/Teviraj/Taviraj-Thin.ttf") format("truetype"),
-        url("../../fonts/Teviraj/Taviraj-Thin.svg") format("svg");
-}
-
-@font-face {
   font-family: "Montserrat Medium";
   src: url("../../fonts/MonsterratMedium/Montserrat-Medium.eot") format("eot"),
         url("../../fonts/MonsterratMedium/Montserrat-Medium.woff2") format("woff2"),
         url("../../fonts/MonsterratMedium/Montserrat-Medium.woff") format("woff"),
         url("../../fonts/MonsterratMedium/Montserrat-Medium.ttf") format("truetype"),
         url("../../fonts/MonsterratMedium/Montserrat-Medium.svg") format("svg");
-}
-
-@font-face {
-  font-family: "Montserrat Light";
-  src: url("../../fonts/MontserratLight/Montserrat-Light.eot") format("eot"),
-        url("../../fonts/MontserratLight/Montserrat-Light.woff2") format("woff2"),
-        url("../../fonts/MontserratLight/Montserrat-Light.woff") format("woff"),
-        url("../../fonts/MontserratLight/Montserrat-Light.ttf") format("truetype"),
-        url("../../fonts/MontserratLight/Montserrat-Light.svg") format("svg");
-}
-
-@font-face {
-  font-family: "Montserrat SemiBold";
-  src: url("../../fonts/MontserratSemiBold/Montserrat-SemiBold.eot") format("eot"),
-        url("../../fonts/MontserratSemiBold/Montserrat-SemiBold.woff2") format("woff2"),
-        url("../../fonts/MontserratSemiBold/Montserrat-SemiBold.woff") format("woff"),
-        url("../../fonts/MontserratSemiBold/Montserrat-SemiBold.ttf") format("truetype"),
-        url("../../fonts/MontserratSemiBold/Montserrat-SemiBold.svg") format("svg");
-}
-
-@font-face {
-  font-family: "Nir";
-  src: url("../../fonts/neviat/Nirotica-Regular.eot") format("eot"),
-        url("../../fonts/neviat/Nirotica-Regular.woff2") format("woff2"),
-        url("../../fonts/neviat/Nirotica-Regular.woff") format("woff"),
-        url("../../fonts/neviat/Nirotica.ttf") format("truetype"),
-        url("../../fonts/neviat/Nirotica-Regular.svg") format("svg");
 }
 
 @font-face {
