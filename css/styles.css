@@ -95,7 +95,7 @@
 
 .carousel {
   height: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .main__container {
@@ -340,6 +340,12 @@
   margin: 30px auto;
 }
 
+.clases__btn-contenedor {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
 .btn,
 .btn:focus {
   border: none;
@@ -358,8 +364,6 @@
   background-color: var(--color-rosado);
   color: var(--color-blanco);
 }
-
-
 
 /* sweetalert */
 .alert__title {
@@ -383,13 +387,11 @@
 
 }
 
-
 .sobre {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 .sobre__titulo {
   font-family: var(--fuente-titulares);
@@ -574,6 +576,15 @@
 }
 
 @media screen and (min-width: 768px ) {
+  .btn__inscripcion {
+    font-size: 20px;
+    margin-bottom: 40px;
+  } 
+  .btn__inscripcion:focus {
+    font-size: 20px;
+    margin-bottom: 40px;
+  } 
+  
   .carousel {
     height: 250px;
     margin-bottom: 40px;
@@ -623,7 +634,7 @@
 
   .clases__btn {
     margin-top: 30px;
-
+    width: 198px;
   }
 
   .clases__btn a{
@@ -651,6 +662,15 @@
 }
 
 @media screen and (min-width: 992px) {
+  .btn__inscripcion {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .btn__inscripcion:focus {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
   .navbar__logo {
     width: 150px;
   }
@@ -718,7 +738,6 @@
 
   .carousel {
     height: 550px;
-    margin-bottom: 70px;
   }
 
   .main__container {
