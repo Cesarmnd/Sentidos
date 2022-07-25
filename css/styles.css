@@ -341,9 +341,10 @@
 }
 
 .clases__btn-contenedor {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .btn,
@@ -669,6 +670,10 @@
   .btn__inscripcion:focus {
     font-size: 20px;
     margin-bottom: 50px;
+  }
+
+  .clases__btn-contenedor {
+    width: 50%;
   }
 
   .navbar__logo {
