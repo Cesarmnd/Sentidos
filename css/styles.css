@@ -56,29 +56,6 @@
   background-color: var(--color-coral);
 }
 
-
-
-/* Sweetalert */
-.alert__title {
-  font-size: 25px;
-  color: var(--color-coral);
-  font-family: var(--fuente-parrafo-demibold);
-}
-
-.alert__container {
-  width: 450px;
-  padding: 10px;
-  border-radius: 30px;
-}
-
-.alert__text {
-  font-size: 16px;
-  width: 90%;
-  margin: 15px auto 0 auto;
-  color: var(--color-negro);
-  font-family: var(--fuente-parrado-light);
-}
-
 /* Mapa */
 .mapa {
   width: 300px;
@@ -779,7 +756,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin: 2rem 1rem;
 }
 
 .btnModal{
@@ -787,6 +764,7 @@
 }
 
 .modal-title{
+  font-size: 25px;
   text-transform: uppercase;
   font-family: var(--fuente-resaltado);
   color: var(--color-coral);
