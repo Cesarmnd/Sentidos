@@ -21,10 +21,6 @@ const redes = [
   }
 ];
 
-// Contenedores de Redes del footer
-const filter = document.getElementById('filter');
-const redContenedor = document.querySelector('.redes__iconos-contenedor');
-
 // SweetAlert
 const swalWithBootstrapButtons = Swal.mixin({
   customClass: {
@@ -72,6 +68,9 @@ function calendarioBtn () {
   });
 };
 
+// Contenedor de Redes del footer
+const redContenedor = document.querySelector('.redes__iconos-contenedor');
+
 // Creación de íconos de redes
 redes.forEach( item => {
   const red = document.createElement('a');
@@ -88,12 +87,14 @@ redes.forEach( item => {
 });
 
 //FOOTER
-const myModalFooter = new bootstrap.Modal(document.getElementById('myModalFooter'))
-const $formFooter = document.querySelector("#formFooter")
-$formFooter.addEventListener('submit', handleSubmitFooter)
-async function handleSubmitFooter(event){
+const myModalFooter = new bootstrap.Modal(document.getElementById('myModalFooter'));
+const $formFooter = document.querySelector("#formFooter");
+$formFooter.addEventListener('submit', handleSubmitFooter);
+
+
+async function handleSubmitFooter(event) {
   event.preventDefault()
-  const formFooter = new FormData(this)
+  const formFooter = new FormData(this);
   const response = await fetch(this.action, {
     method: this.method,
     body: formFooter,
@@ -102,9 +103,9 @@ async function handleSubmitFooter(event){
     }
   })
   if (response.ok){
-    this.reset()
-    myModalFooter.show()
-    console.log("enviado")
+    this.reset();
+    myModalFooter.show();
+    console.log("enviado");
   }
 }
 
