@@ -875,3 +875,26 @@
   }
 }
 
+.modal-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.btnModal{
+  margin: 1rem 0 0 0;
+}
+
+.modal-title{
+  text-transform: uppercase;
+  font-family: var(--fuente-resaltado);
+  color: var(--color-coral);
+  padding: 1rem 0;
+}
+.modal-Texto{
+  text-align: center;
+  font-family: var(--fuente-parrafo-demibold);
+  margin: 0;
+  padding: 1rem 0;
+}
