@@ -85,22 +85,6 @@
   border-radius: 30px;
 }
 
-.modal-title {
-  font-size: 27px;
-  color: var(--color-coral);
-  font-family: var(--fuente-resaltado);
-}
-
-.modal-body {
-  text-align: center;
-  padding: 70px 30px 50px 30px;
-}
-
-.modal-Texto {
-  width: 90%;
-  margin: 10px auto;
-  font-family: var(--fuente-parrafo-light);
-}
 
 /* Sweetalert */
 .alert__title {
