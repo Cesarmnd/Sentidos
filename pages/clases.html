@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- Sweetalert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/4ccbf493a5.js"
@@ -23,19 +23,38 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
       fbq('init', '948454092733207');
       fbq('track', 'PageView');
     </script>
     <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=948454092733207&ev=PageView&noscript=1"
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=948454092733207&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
   </head>
@@ -70,7 +89,12 @@
                 <a class="nav-link" href="./clases.html">Clases</a>
               </li>
               <li class="navbar__elemento">
-                <a class="nav-link" href="https://espaciosentidos.mercadoshops.com.ar" target="_blank">Tienda online</a> 
+                <a
+                  class="nav-link"
+                  href="https://espaciosentidos.mercadoshops.com.ar"
+                  target="_blank"
+                  >Tienda online</a
+                >
               </li>
               <li class="navbar__elemento">
                 <a class="nav-link" href="./sobre.html">Sobre mí</a>
@@ -128,11 +152,7 @@
         </p>
       </section>
       <div class="clases__btn-contenedor">
-        <button
-          class="clases__btn btn"
-          id="calendario"
-          >Ver calendario</button
-        >
+        <button class="clases__btn btn" id="calendario">Ver calendario</button>
         <button class="btn clases__btn" id="inscripcion">Inscribirme</button>
       </div>
     </main>
@@ -140,8 +160,7 @@
     <footer class="footer">
       <section class="redes">
         <h3 class="footer__titulo">REDES S0CIALES</h3>
-        <div class="redes__iconos-contenedor">
-        </div>
+        <div class="redes__iconos-contenedor"></div>
       </section>
 
       <section class="localizacion">
@@ -156,7 +175,8 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <p class="localizacion__texto">
-            Torrent <span class="numero"> 1315 </span> Local, <span class="numero"> 1431 </span>  CABA, Argentina
+            Torrent <span class="numero"> 1315 </span> Local,
+            <span class="numero"> 1431 </span> CABA, Argentina
           </p>
         </div>
       </section>
@@ -167,7 +187,7 @@
         <form
           id="formFooter"
           method="POST"
-          action="https://formspree.io/f/xvoleaak"
+          action="https://formspree.io/f/xjvlndny"
         >
           <input
             class="suscripcion__entrada"

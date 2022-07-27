@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- Sweetalert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/4ccbf493a5.js"
@@ -23,19 +23,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
       fbq('init', '948454092733207');
       fbq('track', 'PageView');
     </script>
     <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=948454092733207&ev=PageView&noscript=1"
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=948454092733207&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
   </head>
@@ -70,7 +89,12 @@
                 <a class="nav-link" href="pages/clases.html">Clases</a>
               </li>
               <li class="navbar__elemento">
-                <a class="nav-link" href="https://espaciosentidos.mercadoshops.com.ar" target="_blank">Tienda online</a> 
+                <a
+                  class="nav-link"
+                  href="https://espaciosentidos.mercadoshops.com.ar"
+                  target="_blank"
+                  >Tienda online</a
+                >
               </li>
               <li class="navbar__elemento">
                 <a class="nav-link" href="pages/sobre.html">Sobre mí</a>
@@ -84,27 +108,34 @@
       </nav>
     </header>
     <main class="inicio">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
-          <a 
-            class="carousel-item active inicio__container" 
+          <a
+            class="carousel-item active inicio__container"
             href="https://espaciosentidos.mercadoshops.com.ar"
             target="_blank"
             data-bs-interval="5000"
-            >
+          >
             <img
               class="inicio__img"
               src="./assets/images/inicio-clases.jpg"
               alt="clases"
               title="Clases y workshops"
             />
-            <p class="inicio__container-texto">Clases y <br> workshops</p>
+            <p class="inicio__container-texto">
+              Clases y <br />
+              workshops
+            </p>
           </a>
-          <a 
-          class="carousel-item inicio__container"
-          href="https://espaciosentidos.mercadoshops.com.ar"
-          target="_blank"
-          data-bs-interval="5000"
+          <a
+            class="carousel-item inicio__container"
+            href="https://espaciosentidos.mercadoshops.com.ar"
+            target="_blank"
+            data-bs-interval="5000"
           >
             <img
               class="inicio__img"
@@ -112,13 +143,16 @@
               alt="insumos"
               title="Insumos y kits"
             />
-            <p class="inicio__container-texto">Insumos <br> y kits</p>
+            <p class="inicio__container-texto">
+              Insumos <br />
+              y kits
+            </p>
           </a>
-          <a 
-          class="carousel-item inicio__container"
-          href="https://espaciosentidos.mercadoshops.com.ar"
-          target="_blank"
-          data-bs-interval="5000"
+          <a
+            class="carousel-item inicio__container"
+            href="https://espaciosentidos.mercadoshops.com.ar"
+            target="_blank"
+            data-bs-interval="5000"
           >
             <img
               class="inicio__img"
@@ -129,11 +163,21 @@
             <p class="inicio__container-texto">Cursos online</p>
           </a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -201,8 +245,7 @@
     <footer class="footer">
       <section class="redes">
         <h3 class="footer__titulo">REDES S0CIALES</h3>
-        <div class="redes__iconos-contenedor">
-        </div>
+        <div class="redes__iconos-contenedor"></div>
       </section>
 
       <section class="localizacion">
@@ -217,7 +260,8 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <p class="localizacion__texto">
-            Torrent <span class="numero"> 1315 </span> Local, <span class="numero"> 1431 </span>  CABA, Argentina
+            Torrent <span class="numero"> 1315 </span> Local,
+            <span class="numero"> 1431 </span> CABA, Argentina
           </p>
         </div>
       </section>
@@ -228,7 +272,7 @@
         <form
           id="formFooter"
           method="POST"
-          action="https://formspree.io/f/xvoleaak"
+          action="https://formspree.io/f/xjvlndny"
         >
           <input
             class="suscripcion__entrada"
@@ -274,9 +318,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
-    ></script>  
+    ></script>
     <!-- Mis scripts -->
     <script src="./scripts/app.js"></script>
   </body>
 </html>
-
