@@ -21,53 +21,6 @@ const redes = [
   }
 ];
 
-// SweetAlert
-const swalWithBootstrapButtons = Swal.mixin({
-  customClass: {
-    popup: 'alert__container',
-    title: 'alert__title',
-    htmlContainer: 'alert__text',
-    confirmButton: 'btn',
-  },
-  buttonsStyling: false,
-});
-
-// Funcion de Arleta
-function alerta ( btn, link) {
-  swalWithBootstrapButtons.fire({ //btn tomará el valor 1 o 2 para poder definir la posicion de la alerta
-    title: 'SALIENDO DE LA PÁGINA',
-    text: 'Te estaremos redirigiendo a una página externa',
-    showConfirmButton: true,
-    confirmButtonText: `Continuar`,
-    position: btn === 1 ? 'bottom-center' : 'bottom-end',
-  })
-  .then((result) => {
-    if (result.isConfirmed) {
-      window.open(link);
-    };
-  });
-};
-
-// Asignacion de eventos a botones Inscripcion y Calendario
-document.getElementById('inscripcion') != null && inscripcionBtn();
-document.getElementById('calendario') != null && calendarioBtn();
-
-// Evento del boton Inscripcion
-function inscripcionBtn () {
-  const inscripcion = document.getElementById('inscripcion');
-  inscripcion.addEventListener( 'click', () => {
-    alerta( 1, 'https://wa.me/541123925341');
-  })
-};
-
-// Evento del boton Calendario
-function calendarioBtn () {
-  const calendario = document.getElementById('calendario');
-  calendario.addEventListener( 'click', () => {
-    alerta( 1, 'https://www.canva.com/design/DAFG3xydAcc/q_Zt_vok_iHlm2j41W4T3Q/view?utm_content=DAFG3xydAcc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink')
-  });
-};
-
 // Contenedor de Redes del footer
 const redContenedor = document.querySelector('.redes__iconos-contenedor');
 
@@ -76,7 +29,7 @@ redes.forEach( item => {
   const red = document.createElement('a');
   red.className = 'redes__iconos';
   red.addEventListener('click', () => {
-    alerta( 2, item.link);
+    window.open(item.link, '_blank').focus();
   });
 
   const icono = document.createElement('i');
